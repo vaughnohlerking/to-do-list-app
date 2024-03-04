@@ -1,0 +1,41 @@
+.item-body {
+  width: 100%;
+  display: inline-flex;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: left;
+  /* align-items: center; */
+  margin-bottom: 2.5%;
+}
+
+.check-box {
+  width: 5%;
+  background-color: aqua;
+  margin-right: 10px;
+  border-radius: 1ch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  width: 85%;
+  height: 85%;
+  /* background-color: black; */
+  border-radius: 1ch;
+}
+
+.item-name {
+}
+
+.item-date {
+  color: lightyellow;
+  font-size: calc(5px + 2vmin);
+  padding-left: 10%;
+}
+
+.item-additional-info {
+  font-size: calc(3px + 2vmin);
+  /* font-size: medium; */
+  color: lightgray;
+}

@@ -2,24 +2,23 @@ import React from "react";
 import logo from "./logo.svg";
 import List from "./components/list";
 import "./App.css";
+import { itemObj } from "./types";
 
 function App() {
+  const fauxItems: itemObj[] = [
+    { name: "php", done: false },
+    {
+      name: "practice react",
+      additionalInfo: "It's going slowly today but it will be alright",
+      done: false,
+      created: new Date(),
+    },
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
-        <List />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lernen Sie React
-        </a>
+        <List initItems={fauxItems} listName="Vaughn's list" />
       </header>
     </div>
   );
